@@ -18,9 +18,11 @@ from django.contrib import admin
 from django.urls import path
 from Book import views as bookview
 from Author import views as authorview
+from Main import views as  mainviev
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', bookview.index2),
-    path('', authorview.index1)  
+    path('', authorview.index1), 
+    path('', mainviev.idex3)
 ]
